@@ -1,0 +1,5 @@
+platform :ios, '10.0'   
+
+target 'MPJuniorIOSTest' do
+pod 'Appodeal', '~> 2.1.10'
+end
