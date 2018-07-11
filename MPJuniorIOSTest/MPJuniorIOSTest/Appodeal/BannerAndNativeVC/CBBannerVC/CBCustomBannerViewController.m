@@ -13,7 +13,6 @@
 @interface CBCustomBannerViewController () <AppodealBannerViewDelegate>
 
 @property(strong,nonatomic) AppodealBannerView* bannerView;
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *height;
 
 @end
 
@@ -22,30 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGSize bannerSize = kAPDAdSize320x50;
-    if (isTablet) {
-        bannerSize = kAPDAdSize728x90;
-    }
-    
-    self.bannerView = [[AppodealBannerView alloc] initWithSize:bannerSize rootViewController:self];
-    self.bannerView.delegate = self;
-    [self.view addSubview:self.bannerView];
-    
-    
-    [self.bannerView setBackgroundVisible:YES];
-    [self.bannerView setUsesSmartSizing:YES];
-    
-    [self.bannerView setAdSize:bannerSize];
-//    self.height.constant = bannerSize.height;
-    
-    self.bannerView.center = CGPointMake(self.view.center.x, self.view.center.y);
-    
-    [self.bannerView loadAd];
 }
 
 -(void) showAlert: (NSString*) nameOfMethod{
     
-    UIAlertController* alert =  [super alertFromString: nameOfMethod];
+    UIAlertController* alert =  [self alertFromString: nameOfMethod];
     
     [self presentViewController:alert animated:YES completion:nil];
 }
@@ -53,27 +33,43 @@
 #pragma mark - Actions
 
 -(void) showBanner:(UIBarButtonItem*) sender{
-    [super touchIgnoreInApp];
     
-    [self.view addSubview:self.bannerView];
+    [super touchIgnoreInApp];
     [self.bannerView loadAd];
-   // [Appodeal showAd:(AppodealShowStyle) rootViewController:<#(UIViewController *)#>]
+    
 }
 
 -(void) downloadBanner:(UIBarButtonItem*) sender{
+    
     [super touchIgnoreInApp];
-    [Appodeal hideBanner];
+    CGSize bannerSize = kAPDAdSize320x50;
+    if (isTablet) {
+        bannerSize = kAPDAdSize728x90;
+    }
+    
+    self.bannerView = [[AppodealBannerView alloc] initWithSize:bannerSize rootViewController:self];
+    self.bannerView.delegate = self;
+    
+    [self.bannerView setBackgroundVisible:YES];
+    [self.bannerView setUsesSmartSizing:YES];
+    
+    [self.bannerView setAdSize:bannerSize];
+    
+    self.bannerView.center = CGPointMake(self.view.center.x, self.view.center.y);
+    
 }
 
 -(void) hideBanner : (UIBarButtonItem*) sender{
+    
     [super touchIgnoreInApp];
-     [Appodeal hideBanner];
+
+    [self.bannerView removeFromSuperview];
 }
 
 #pragma mark - AppodealBannerViewDelegate
 
 - (void)bannerViewDidLoadAd:(APDBannerView *)bannerView {
-  
+   [self.view addSubview:self.bannerView];
    [self showAlert:NSStringFromSelector(_cmd)];
 }
 

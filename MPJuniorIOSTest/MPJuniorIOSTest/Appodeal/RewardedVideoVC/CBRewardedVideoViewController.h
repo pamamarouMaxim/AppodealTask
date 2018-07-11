@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CBAlertCallBackViewController.h"
 
-@interface CBRewardedVideoViewController : CBAlertCallBackViewController
+@interface CBRewardedVideoViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITextField *placementTextField;
 
 

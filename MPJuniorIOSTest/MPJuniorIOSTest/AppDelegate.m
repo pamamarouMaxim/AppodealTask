@@ -19,10 +19,12 @@ static NSString* apiKey = @"ecdc93b5ad2fdeda3c92509b62a9812e3699dcdf0926fb06";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     [Appodeal setTestingEnabled:YES];
     [Appodeal initializeWithApiKey: apiKey
-                             types: AppodealAdTypeBanner | AppodealAdTypeRewardedVideo |
-AppodealAdTypeNativeAd];
+                             types: AppodealAdTypeBanner       |
+                                    AppodealAdTypeRewardedVideo|
+                                    AppodealAdTypeNativeAd];
     
     return YES;
 }

@@ -1,27 +1,19 @@
 //
-//  CBAlertCallBackViewController.m
+//  UIViewController+CBAlertWithNameOfMethod.m
 //  MPJuniorIOSTest
 //
-//  Created by максим понаморёв on 7/9/18.
+//  Created by максим понаморёв on 7/10/18.
 //  Copyright © 2018 максим понаморёв. All rights reserved.
 //
 
-#import "CBAlertCallBackViewController.h"
+#import "UIViewController+CBAlertWithNameOfMethod.h"
 
-@interface CBAlertCallBackViewController ()
-
-@end
-
-@implementation CBAlertCallBackViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
+@implementation UIViewController (CBAlertWithNameOfMethod)
 
 -(UIAlertController*) alertFromString: (NSString*) nameOfMethod{
     
-    NSString *string = nameOfMethod;
+  
+    NSString *string =  [nameOfMethod stringByReplacingOccurrencesOfString:@":" withString:@" "];
     NSRegularExpression *regexp = [NSRegularExpression
                                    regularExpressionWithPattern:@"([a-z])([A-Z])"
                                    options:0
@@ -48,9 +40,5 @@
     return alert;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

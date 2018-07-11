@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Appodeal/Appodeal.h>
-#import "CBAlertCallBackViewController.h"
+#import "UIViewController+CBAlertWithNameOfMethod.h"
 
-@interface CBParentBannerNativeViewController : CBAlertCallBackViewController
+@interface CBParentBannerNativeViewController : UIViewController
 
 -(void) touchIgnoreInApp;
 

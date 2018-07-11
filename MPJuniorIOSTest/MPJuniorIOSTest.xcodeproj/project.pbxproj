@@ -20,9 +20,6 @@
 		60734A2A20F240CC00007E9F /* CBCustomBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60734A2920F240CC00007E9F /* CBCustomBannerViewController.m */; };
 		60734A2D20F2633500007E9F /* CBNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60734A2C20F2633500007E9F /* CBNativeViewController.m */; };
 		60734A3220F2651F00007E9F /* CBParentBannerNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60734A3120F2651F00007E9F /* CBParentBannerNativeViewController.m */; };
-		60734A3B20F2C51500007E9F /* CBAlertCallBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60734A3A20F2C51500007E9F /* CBAlertCallBackViewController.m */; };
-		60734A4920F3E0CB00007E9F /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 60734A4520F3E0CB00007E9F /* KLCPopup.m */; };
-		60734A4A20F3E0CB00007E9F /* StackedKLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 60734A4820F3E0CB00007E9F /* StackedKLCPopup.m */; };
 		60A9F7D020EFEBD80030C8B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F7CF20EFEBD80030C8B9 /* AppDelegate.m */; };
 		60A9F7D620EFEBD80030C8B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A9F7D420EFEBD80030C8B9 /* Main.storyboard */; };
 		60A9F7D820EFEBD80030C8B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A9F7D720EFEBD80030C8B9 /* Assets.xcassets */; };
@@ -30,6 +27,7 @@
 		60A9F7DE20EFEBD80030C8B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F7DD20EFEBD80030C8B9 /* main.m */; };
 		60A9F7E820EFEBD80030C8B9 /* MPJuniorIOSTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F7E720EFEBD80030C8B9 /* MPJuniorIOSTestTests.m */; };
 		60A9F7F320EFEBD80030C8B9 /* MPJuniorIOSTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F7F220EFEBD80030C8B9 /* MPJuniorIOSTestUITests.m */; };
+		60F726DE20F50AAC00B3A15F /* UIViewController+CBAlertWithNameOfMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F726DD20F50AAC00B3A15F /* UIViewController+CBAlertWithNameOfMethod.m */; };
 		827216449ADAF7A4DCCA3672 /* libPods-MPJuniorIOSTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78FD81FD3AB9B051BF87D6 /* libPods-MPJuniorIOSTest.a */; };
 /* End PBXBuildFile section */
 
@@ -71,12 +69,6 @@
 		60734A2C20F2633500007E9F /* CBNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBNativeViewController.m; sourceTree = "<group>"; };
 		60734A3020F2651F00007E9F /* CBParentBannerNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBParentBannerNativeViewController.h; sourceTree = "<group>"; };
 		60734A3120F2651F00007E9F /* CBParentBannerNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBParentBannerNativeViewController.m; sourceTree = "<group>"; };
-		60734A3920F2C51500007E9F /* CBAlertCallBackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAlertCallBackViewController.h; sourceTree = "<group>"; };
-		60734A3A20F2C51500007E9F /* CBAlertCallBackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAlertCallBackViewController.m; sourceTree = "<group>"; };
-		60734A4520F3E0CB00007E9F /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
-		60734A4620F3E0CB00007E9F /* StackedKLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackedKLCPopup.h; sourceTree = "<group>"; };
-		60734A4720F3E0CB00007E9F /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
-		60734A4820F3E0CB00007E9F /* StackedKLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackedKLCPopup.m; sourceTree = "<group>"; };
 		60A9F7CB20EFEBD80030C8B9 /* MPJuniorIOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPJuniorIOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A9F7CE20EFEBD80030C8B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60A9F7CF20EFEBD80030C8B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +83,8 @@
 		60A9F7EE20EFEBD80030C8B9 /* MPJuniorIOSTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPJuniorIOSTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A9F7F220EFEBD80030C8B9 /* MPJuniorIOSTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPJuniorIOSTestUITests.m; sourceTree = "<group>"; };
 		60A9F7F420EFEBD80030C8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60F726DC20F50AAC00B3A15F /* UIViewController+CBAlertWithNameOfMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CBAlertWithNameOfMethod.h"; sourceTree = "<group>"; };
+		60F726DD20F50AAC00B3A15F /* UIViewController+CBAlertWithNameOfMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CBAlertWithNameOfMethod.m"; sourceTree = "<group>"; };
 		7324BEC646A9925DF84B18C9 /* Pods-MPJuniorIOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPJuniorIOSTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MPJuniorIOSTest/Pods-MPJuniorIOSTest.release.xcconfig"; sourceTree = "<group>"; };
 		F84874EA104001441DA4BE91 /* Pods-MPJuniorIOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPJuniorIOSTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MPJuniorIOSTest/Pods-MPJuniorIOSTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FC78FD81FD3AB9B051BF87D6 /* libPods-MPJuniorIOSTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MPJuniorIOSTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,32 +190,12 @@
 		60734A3C20F3674F00007E9F /* Appodeal */ = {
 			isa = PBXGroup;
 			children = (
-				60734A3D20F3E08700007E9F /* Popup */,
-				60734A3920F2C51500007E9F /* CBAlertCallBackViewController.h */,
-				60734A3A20F2C51500007E9F /* CBAlertCallBackViewController.m */,
+				60F726DC20F50AAC00B3A15F /* UIViewController+CBAlertWithNameOfMethod.h */,
+				60F726DD20F50AAC00B3A15F /* UIViewController+CBAlertWithNameOfMethod.m */,
 				60734A2220F23F3500007E9F /* RewardedVideoVC */,
 				60734A1120F23B5E00007E9F /* BannerAndNativeVC */,
 			);
 			path = Appodeal;
-			sourceTree = "<group>";
-		};
-		60734A3D20F3E08700007E9F /* Popup */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Popup;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		60734A3E20F3E08B00007E9F /* Popup */ = {
-			isa = PBXGroup;
-			children = (
-				60734A4720F3E0CB00007E9F /* KLCPopup.h */,
-				60734A4520F3E0CB00007E9F /* KLCPopup.m */,
-				60734A4620F3E0CB00007E9F /* StackedKLCPopup.h */,
-				60734A4820F3E0CB00007E9F /* StackedKLCPopup.m */,
-			);
-			path = Popup;
 			sourceTree = "<group>";
 		};
 		60A9F7C220EFEBD70030C8B9 = {
@@ -260,7 +234,6 @@
 				60A9F7DD20EFEBD80030C8B9 /* main.m */,
 				60734A0420F2238F00007E9F /* Image */,
 				60734A3C20F3674F00007E9F /* Appodeal */,
-				60734A3E20F3E08B00007E9F /* Popup */,
 			);
 			path = MPJuniorIOSTest;
 			sourceTree = "<group>";
@@ -521,13 +494,11 @@
 				60734A2A20F240CC00007E9F /* CBCustomBannerViewController.m in Sources */,
 				60734A2720F2400500007E9F /* CBStaticBannerViewController.m in Sources */,
 				60734A3220F2651F00007E9F /* CBParentBannerNativeViewController.m in Sources */,
-				60734A4A20F3E0CB00007E9F /* StackedKLCPopup.m in Sources */,
 				60A9F7DE20EFEBD80030C8B9 /* main.m in Sources */,
 				60734A2D20F2633500007E9F /* CBNativeViewController.m in Sources */,
+				60F726DE20F50AAC00B3A15F /* UIViewController+CBAlertWithNameOfMethod.m in Sources */,
 				60A9F7D020EFEBD80030C8B9 /* AppDelegate.m in Sources */,
-				60734A4920F3E0CB00007E9F /* KLCPopup.m in Sources */,
 				60734A0D20F2291900007E9F /* CBRewardedVideoViewController.m in Sources */,
-				60734A3B20F2C51500007E9F /* CBAlertCallBackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

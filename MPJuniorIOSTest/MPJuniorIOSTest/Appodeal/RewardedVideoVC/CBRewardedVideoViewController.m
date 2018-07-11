@@ -8,6 +8,7 @@
 
 #import "CBRewardedVideoViewController.h"
 #import <Appodeal/Appodeal.h>
+#import "UIViewController+CBAlertWithNameOfMethod.h"
 
 @interface CBRewardedVideoViewController () <AppodealRewardedVideoDelegate,UITextFieldDelegate>
 
@@ -36,7 +37,7 @@
 
 -(void) showAlert: (NSString*) nameOfMethod{
     
-    UIAlertController* alert =  [super alertFromString: nameOfMethod];
+    UIAlertController* alert =  [self alertFromString: nameOfMethod];
     
     [self presentViewController:alert animated:YES completion:nil];
 }

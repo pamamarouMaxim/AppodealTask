@@ -55,11 +55,13 @@
     
     if ([self.bannerTypePickview selectedRowInComponent:0] <= 1){
         CBStaticBannerViewController* staticVC  = [self.storyboard instantiateViewControllerWithIdentifier:@"CBStaticBannerViewController"] ;
-        
+        staticVC.typeOfBanner = CBBannerTop;
         switch ([self.bannerTypePickview selectedRowInComponent:0]) {
             case 0:  staticVC.navigationItem.title = [self.arrayTypeOfBanner objectAtIndex:0];
+                staticVC.typeOfBanner = CBBannerTop;
                 break;
             case 1:  staticVC.navigationItem.title = [self.arrayTypeOfBanner objectAtIndex:1];
+                 staticVC.typeOfBanner = CBBannerButtom;
                 break;
             default:
                 break;

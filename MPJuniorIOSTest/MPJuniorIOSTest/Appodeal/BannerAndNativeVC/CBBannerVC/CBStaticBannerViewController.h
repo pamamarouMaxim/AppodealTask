@@ -8,9 +8,15 @@
 
 #import "CBParentBannerNativeViewController.h"
 
+typedef enum {
+    CBBannerTop,
+    CBBannerButtom
+} CBTypeOfBanner;
+
 @interface CBStaticBannerViewController : CBParentBannerNativeViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *placementTextField;
+@property(assign,nonatomic)  CBTypeOfBanner typeOfBanner;
 
+@property (weak, nonatomic) IBOutlet UITextField *placementTextField;
 
 @end

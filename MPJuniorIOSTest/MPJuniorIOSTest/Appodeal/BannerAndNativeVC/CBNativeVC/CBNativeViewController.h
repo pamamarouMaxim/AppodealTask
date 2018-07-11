@@ -11,4 +11,17 @@
 
 @interface CBNativeViewController : CBParentBannerNativeViewController
 
+
+@property (strong, nonatomic) IBOutlet UIView *topView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *iconeImageView;
+@property (weak, nonatomic) IBOutlet UILabel *appNameLabel;
+@property (weak, nonatomic) IBOutlet UIView *adChoiseView;
+
+@property (weak, nonatomic) IBOutlet UIView *mainView;
+
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
+
+@property (weak, nonatomic) IBOutlet UILabel *callToActionLabel;
+
 @end
